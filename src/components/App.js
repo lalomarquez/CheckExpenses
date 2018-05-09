@@ -11,11 +11,10 @@ class App extends Component {
           <h1 className="App-title">Check Expenses</h1>
         </header>
 
-        <p>hello</p>
         <ListUsers />
 
       </div>
-    );
+    )
   }
 }
 
