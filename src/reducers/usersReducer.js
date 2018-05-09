@@ -1,13 +1,10 @@
 import { SHOW_USERS } from '../helpers/constActions'
-
-const initialState = {
-    users: []
-}
+import initialState from '../api/users.json'
 
 const usersReducer = (state = initialState, action) => {
     switch (action.type) {
-        case SHOW_USERS:        
-            return Object.assign({}, state, { users: action.payload })
+        case SHOW_USERS:   
+            return Object.assign({}, state, { users: state.users })
         default:
             return state
     }
